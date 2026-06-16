@@ -28,15 +28,15 @@ max_retries = st.sidebar.slider("실패 시 재시도 횟수", min_value=0, max_
 st.subheader("📡 방송/통신사 선택")
 col_b1, col_b2, col_b3, col_b4, col_b5 = st.columns(5)
 with col_b1:
-    use_mbc = st.checkbox("MBC", value=True)
+    use_mbc = st.checkbox("MBC", value=False)
 with col_b2:
-    use_kbs = st.checkbox("KBS", value=True)
+    use_kbs = st.checkbox("KBS", value=False)
 with col_b3:
-    use_sbs = st.checkbox("SBS", value=True)
+    use_sbs = st.checkbox("SBS", value=False)
 with col_b4:
-    use_yonhap = st.checkbox("연합뉴스")
+    use_yonhap = st.checkbox("연합뉴스", value=True)
 with col_b5:
-    use_ytn = st.checkbox("YTN")
+    use_ytn = st.checkbox("YTN", value=False)
 
 st.subheader("📰 주요 신문사 선택")
 col_n1, col_n2, col_n3, col_n4, col_n5 = st.columns(5)
